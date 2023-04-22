@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body__nosotros {
+  background-color: $paleta-color-2;
+}
+.hero {
+  p {
+    font-size: 22px;
+    color: $color-texto-1;
+  }
+}
+.section__1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url(../imagenes/NOSOTROS-CASAVIEJA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $color-texto-2;
+  text-align: right;
+  margin: 0.5rem 0;
+  padding: 8rem 0;
+  .section-tittle {
+    font-size: 38px;
+    font-weight: bold;
+  }
+}
+.section__2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url(../imagenes/NOSOTROS-PUEBLO.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $color-texto-2;
+  text-align: left;
+  margin: 2rem 0;
+  padding: 8rem 0;
+  .section-tittle {
+    font-size: 38px;
+    font-weight: bold;
+  }
+}
+.footer {
+  background-color: $color-texto-2;
+  text-align: center;
+  list-style-type: none;
+  padding-top: 2rem;
+  color: $color-texto-1;
+
+  .footer__newsletter {
+    font-family: $tipografia-1;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .footer__social {
+    font-family: $tipografia-1;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .social-item {
+    list-style-type: none;
+    .social-link {
+      color: $color-texto-1;
+      font-size: 12px;
+    }
+  }
+  .footer__about {
+    font-family: $tipografia-1;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .about-item {
+    list-style-type: none;
+  }
+}

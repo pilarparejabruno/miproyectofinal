@@ -2,6 +2,90 @@
 /* paleta de color */
 /* colores de texto */
 /* tipografías */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body__nosotros {
+  background-color: #a0a603;
+}
+
+.hero p {
+  font-size: 22px;
+  color: #0e0d07;
+}
+
+.section__1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(../imagenes/NOSOTROS-CASAVIEJA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: right;
+  margin: 0.5rem 0;
+  padding: 8rem 0;
+}
+.section__1 .section-tittle {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.section__2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(../imagenes/NOSOTROS-PUEBLO.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: left;
+  margin: 2rem 0;
+  padding: 8rem 0;
+}
+.section__2 .section-tittle {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #ffffff;
+  text-align: center;
+  list-style-type: none;
+  padding-top: 2rem;
+  color: #0e0d07;
+}
+.footer .footer__newsletter {
+  font-family: "Zilla Slab", serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer .footer__social {
+  font-family: "Zilla Slab", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.footer .social-item {
+  list-style-type: none;
+}
+.footer .social-item .social-link {
+  color: #0e0d07;
+  font-size: 12px;
+}
+.footer .footer__about {
+  font-family: "Zilla Slab", serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.footer .about-item {
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   background-color: #ffffff;
   display: block;
