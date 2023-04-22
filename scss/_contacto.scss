@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contacto__hero {
+  text-align: center;
+  background-color: $paleta-color-2;
+  color: $color-texto-1;
+  padding: 3rem;
+  .tittle {
+    margin: 0.5rem 0;
+    font-family: $tipografia-1;
+  }
+  .subtittle {
+    font-family: $tipografia-1;
+  }
+  .description {
+    font-weight: 500;
+  }
+}
+.section__form {
+  padding: 3rem 0;
+  color: $color-texto-1;
+  font-size: 20px;
+  background-color: $paleta-color-2;
+  .button {
+    color: $color-texto-1;
+    font-weight: 500;
+    background-color: $paleta-color-3;
+  }
+}
+.section__info {
+  padding: 3rem 0;
+  text-align: center;
+  .info-iconos svg {
+    width: 50px;
+    height: 70px;
+    color: $paleta-color-3;
+  }
+  .info-tittle {
+    color: $color-texto-1;
+    font-size: 22px;
+  }
+  .info-description {
+    color: $color-texto-1;
+    font-size: 15px;
+  }
+  .info-redes {
+    list-style: none;
+    .redes-link {
+      color: $color-texto-1;
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}
+.section__map {
+  background-color: $paleta-color-3;
+  padding: 2rem 0;
+}

@@ -27,11 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&family=Satisfy&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="../imagenes/laesquinadelaabuela-LOGO.jpeg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../imagenes/LOGO.png" type="image/x-icon" />
     <title>La esquina de la abuela Lodge</title>
   </head>
   <body>
@@ -39,11 +35,7 @@
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img
-              src="../imagenes/laesquinadelaabuela-LOGO.jpeg"
-              alt="logo del lodge"
-              width="150"
-            />
+            <img src="../imagenes/LOGO.png" alt="logo del lodge" width="150" />
           </a>
           <button
             class="navbar-toggler"
@@ -95,13 +87,13 @@
       </nav>
     </header>
     <main>
-      <section class="section__hero">
+      <section class="contacto__hero">
         <div class="container">
           <div class="row">
             <div class="col-sm-12"></div>
-            <h2>CONTÁCTANOS</h2>
-            <h1>ESTAMOS PARA AYUDARTE</h1>
-            <p>
+            <h2 class="subtittle">CONTÁCTANOS</h2>
+            <h1 class="tittle">ESTAMOS PARA AYUDARTE</h1>
+            <p class="description">
               Dudas,consultas o reservas. Dejanos un mensaje y te responderemos
               a la brevedad. También podes escribirnos por WhatsApp o Redes
               sociales.
@@ -111,50 +103,54 @@
       </section>
       <section class="section__form">
         <div class="container d-flex justify-content-center">
-          <div class="md-2">
+          <div>
             <div class="row">
               <div class="col">
-                <div class="mb-2">
+                <div class="mb-4">
                   <label for="nombre">Nombre</label>
                   <input
                     type="text"
                     class="form-control"
                     name="nombre"
                     id="nombre"
+                    placeholder="Ingrese su nombre"
                   />
                 </div>
               </div>
               <div class="col">
-                <div class="mb-2">
+                <div class="mb-4">
                   <label for="apellido">Apellido</label>
                   <input
                     type="text"
                     class="form-control"
                     name="apellido"
                     id="apellido"
+                    placeholder="Ingrese su apellido"
                   />
                 </div>
               </div>
               <div class="col">
-                <div class="mb-2">
+                <div class="mb-4">
                   <label for="correo">Correo</label>
                   <input
                     type="text"
                     class="form-control"
                     name="correo"
                     id="correo"
+                    placeholder="Ingrese su correo"
                   />
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <div class="mb-2">
+                <div class="mb-4">
                   <label for="mensaje">Mensaje</label>
                   <textarea
                     name="mensaje"
                     id="mensaje"
                     class="form-control"
+                    placeholder="Por favor ingrese su consulta"
                     cols="50"
                     rows="10"
                   ></textarea>
@@ -163,8 +159,8 @@
             </div>
             <div class="row">
               <div class="col">
-                <div class="mb-2">
-                  <button class="btn btn-primary">Enviar</button>
+                <div class="mb-4 d-grid gap-2 col-6 mx-auto">
+                  <button class="btn button">Enviar</button>
                 </div>
               </div>
             </div>
@@ -189,8 +185,8 @@
                   />
                 </svg>
               </div>
-              <h3>DIRECCIÓN</h3>
-              <p>
+              <h3 class="info-tittle">DIRECCIÓN</h3>
+              <p class="info-description">
                 Challhuaquen Lodge Ruta 259 km. 59 Valle de Trevelin, Chubut
                 Patagonia Argentina Coordenadas Google: -43.173739, -71.602570
               </p>
@@ -212,8 +208,8 @@
                   />
                 </svg>
               </div>
-              <h3>CONTACTOS</h3>
-              <p>(+54 9 11) 5471-8580</p>
+              <h3 class="info-tittle">CONTACTOS</h3>
+              <p class="info-description">(+54 9 11) 5471-8580</p>
             </div>
             <div class="col-md-4">
               <div class="info-iconos">
@@ -230,14 +226,16 @@
                   />
                 </svg>
               </div>
-              <h3>REDES SOCIALES</h3>
+              <h3 class="info-tittle">REDES SOCIALES</h3>
               <div>
-                <ul>
-                  <li class="">
-                    <a href="" class=""
+                <ul class="info-redes">
+                  <li>
+                    <a href="" class="redes-link"
                       ><i class="fa-brands fa-facebook">Facebook</i></a
                     >
-                    <a href="" class=""
+                  </li>
+                  <li>
+                    <a href="" class="redes-link"
                       ><i class="fa-brands fa-instagram">Instagram</i></a
                     >
                   </li>
@@ -247,7 +245,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="section__map">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -284,23 +282,23 @@
             <div class="footer__social">Social</div>
             <div>
               <ul class="container text-center">
-                <li class="social__item">
-                  <a href="" class="social__link"
+                <li class="social-item">
+                  <a href="" class="social-link"
                     ><i class="fa-brands fa-facebook">Facebook</i></a
                   >
                 </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
+                <li class="social-item">
+                  <a href="" class="social-link"
                     ><i class="fa-brands fa-instagram">Instagram</i></a
                   >
                 </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
+                <li class="social-item">
+                  <a href="" class="social-link"
                     ><i class="fa-solid fa-at">E-mail</i></a
                   >
                 </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
+                <li class="social-item">
+                  <a href="" class="social-link"
                     ><i class="fa-brands fa-youtube">Youtube</i></a
                   >
                 </li>
@@ -311,10 +309,10 @@
             <div class="footer__about">About</div>
             <div>
               <ul class="container text-center">
-                <li class="about__item">Authors</li>
-                <li class="about__item">Contact</li>
-                <li class="about__item">About us</li>
-                <li class="about__item">Sitemap</li>
+                <li class="about-item">Authors</li>
+                <li class="about-item">Contact</li>
+                <li class="about-item">About us</li>
+                <li class="about-item">Sitemap</li>
               </ul>
             </div>
           </div>

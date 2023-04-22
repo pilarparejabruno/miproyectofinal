@@ -42,36 +42,3 @@
     font-weight: bold;
   }
 }
-.footer {
-  background-color: $color-texto-2;
-  text-align: center;
-  list-style-type: none;
-  padding-top: 2rem;
-  color: $color-texto-1;
-
-  .footer__newsletter {
-    font-family: $tipografia-1;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .footer__social {
-    font-family: $tipografia-1;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .social-item {
-    list-style-type: none;
-    .social-link {
-      color: $color-texto-1;
-      font-size: 12px;
-    }
-  }
-  .footer__about {
-    font-family: $tipografia-1;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .about-item {
-    list-style-type: none;
-  }
-}

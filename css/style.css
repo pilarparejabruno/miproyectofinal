@@ -8,6 +8,72 @@
   box-sizing: border-box;
 }
 
+.contacto__hero {
+  text-align: center;
+  background-color: #a0a603;
+  color: #0e0d07;
+  padding: 3rem;
+}
+.contacto__hero .tittle {
+  margin: 0.5rem 0;
+  font-family: "Zilla Slab", serif;
+}
+.contacto__hero .subtittle {
+  font-family: "Zilla Slab", serif;
+}
+.contacto__hero .description {
+  font-weight: 500;
+}
+
+.section__form {
+  padding: 3rem 0;
+  color: #0e0d07;
+  font-size: 20px;
+  background-color: #a0a603;
+}
+.section__form .button {
+  color: #0e0d07;
+  font-weight: 500;
+  background-color: #593202;
+}
+
+.section__info {
+  padding: 3rem 0;
+  text-align: center;
+}
+.section__info .info-iconos svg {
+  width: 50px;
+  height: 70px;
+  color: #593202;
+}
+.section__info .info-tittle {
+  color: #0e0d07;
+  font-size: 22px;
+}
+.section__info .info-description {
+  color: #0e0d07;
+  font-size: 15px;
+}
+.section__info .info-redes {
+  list-style: none;
+}
+.section__info .info-redes .redes-link {
+  color: #0e0d07;
+  font-size: 15px;
+  text-align: center;
+}
+
+.section__map {
+  background-color: #593202;
+  padding: 2rem 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .body__nosotros {
   background-color: #a0a603;
 }
@@ -45,39 +111,6 @@
 .section__2 .section-tittle {
   font-size: 38px;
   font-weight: bold;
-}
-
-.footer {
-  background-color: #ffffff;
-  text-align: center;
-  list-style-type: none;
-  padding-top: 2rem;
-  color: #0e0d07;
-}
-.footer .footer__newsletter {
-  font-family: "Zilla Slab", serif;
-  font-size: 18px;
-  font-weight: bold;
-}
-.footer .footer__social {
-  font-family: "Zilla Slab", serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-.footer .social-item {
-  list-style-type: none;
-}
-.footer .social-item .social-link {
-  color: #0e0d07;
-  font-size: 12px;
-}
-.footer .footer__about {
-  font-family: "Zilla Slab", serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-.footer .about-item {
-  list-style-type: none;
 }
 
 * {
@@ -119,7 +152,7 @@
   content: "";
   height: 3px;
   width: 0%;
-  background: #a0a603;
+  background: #593202;
   position: absolute;
   left: 0;
   bottom: -12px;
