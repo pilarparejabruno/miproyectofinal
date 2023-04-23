@@ -3,16 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-.contacto__hero {
+.section__hero {
   text-align: center;
   background-color: $paleta-color-2;
   color: $color-texto-1;
   padding: 3rem;
-  .tittle {
+  .title {
     margin: 0.5rem 0;
     font-family: $tipografia-1;
   }
-  .subtittle {
+  .subtitle {
     font-family: $tipografia-1;
   }
   .description {
@@ -38,7 +38,7 @@
     height: 70px;
     color: $paleta-color-3;
   }
-  .info-tittle {
+  .info-title {
     color: $color-texto-1;
     font-size: 22px;
   }

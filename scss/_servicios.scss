@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section__cards {
+  padding: 4rem 0;
+  text-align: center;
+  .card {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    .card-body {
+      color: $color-texto-1;
+      .card-title {
+        font-size: 30px;
+      }
+      .card-text {
+        font-size: 20px;
+      }
+      .button {
+        color: $color-texto-2;
+        font-weight: 500;
+        background-color: $paleta-color-3;
+      }
+    }
+  }
+}
