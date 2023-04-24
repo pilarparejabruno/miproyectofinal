@@ -3,10 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+.body__exploraellodge {
+  background-color: $paleta-color-3;
+}
 .articles {
   padding: 2rem;
+  margin: 2.5rem;
   text-align: center;
-  .tittle {
+  background-color: $paleta-color-4;
+  .title {
     color: $color-texto-1;
     font-size: 20px;
     margin-bottom: -2rem;
@@ -38,7 +43,7 @@
   .articles {
     padding: 4rem;
     text-align: center;
-    .tittle {
+    .title {
       color: $color-texto-1;
       font-size: 32px;
       margin-bottom: -2rem;

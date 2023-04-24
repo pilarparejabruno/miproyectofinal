@@ -10,7 +10,7 @@
 
 .section__hero {
   text-align: center;
-  background-color: #a0a603;
+  background-color: #6c733d;
   color: #0e0d07;
   padding: 3rem;
 }
@@ -29,12 +29,12 @@
   padding: 3rem 0;
   color: #0e0d07;
   font-size: 20px;
-  background-color: #a0a603;
+  background-color: #6c733d;
 }
 .section__form .button {
   color: #0e0d07;
   font-weight: 500;
-  background-color: #593202;
+  background-color: #6c733d;
 }
 
 .section__info {
@@ -44,7 +44,7 @@
 .section__info .info-iconos svg {
   width: 50px;
   height: 70px;
-  color: #593202;
+  color: #6c733d;
 }
 .section__info .info-title {
   color: #0e0d07;
@@ -64,7 +64,7 @@
 }
 
 .section__map {
-  background-color: #593202;
+  background-color: #6c733d;
   padding: 2rem 0;
 }
 
@@ -74,11 +74,17 @@
   box-sizing: border-box;
 }
 
+.body__exploraellodge {
+  background-color: #6c733d;
+}
+
 .articles {
   padding: 2rem;
+  margin: 2.5rem;
   text-align: center;
+  background-color: #ffffff;
 }
-.articles .tittle {
+.articles .title {
   color: #0e0d07;
   font-size: 20px;
   margin-bottom: -2rem;
@@ -86,7 +92,7 @@
 .articles .divisor svg {
   width: 70px;
   height: 100px;
-  color: #593202;
+  color: #6c733d;
 }
 .articles .description {
   color: #0e0d07;
@@ -109,7 +115,7 @@
     padding: 4rem;
     text-align: center;
   }
-  .articles .tittle {
+  .articles .title {
     color: #0e0d07;
     font-size: 32px;
     margin-bottom: -2rem;
@@ -117,7 +123,7 @@
   .articles .divisor svg {
     width: 70px;
     height: 100px;
-    color: #593202;
+    color: #6c733d;
   }
   .articles .description {
     color: #0e0d07;
@@ -136,7 +142,7 @@
 }
 
 .body__nosotros {
-  background-color: #a0a603;
+  background-color: #6c733d;
 }
 
 .hero p {
@@ -202,7 +208,7 @@
 .section__cards .card .card-body .button {
   color: #ffffff;
   font-weight: 500;
-  background-color: #593202;
+  background-color: #6c733d;
 }
 
 * {
@@ -244,7 +250,7 @@
   content: "";
   height: 3px;
   width: 0%;
-  background: #593202;
+  background: #f2bb16;
   position: absolute;
   left: 0;
   bottom: -12px;
@@ -265,7 +271,7 @@
   margin: 2rem 0;
   padding: 2rem 0;
   color: #0e0d07;
-  background-color: #a0a603;
+  background-color: #6c733d;
 }
 .hero .hero__content {
   position: static;
@@ -347,7 +353,7 @@
 }
 
 .footer {
-  background-color: #ffffff;
+  background-color: #6c733d;
   text-align: center;
   list-style-type: none;
   padding-top: 2rem;
