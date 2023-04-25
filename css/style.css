@@ -2,18 +2,6 @@
 /* paleta de color */
 /* colores de texto */
 /* tipografías */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.section__hero {
-  text-align: center;
-  background-color: #6c733d;
-  color: #0e0d07;
-  padding: 3rem;
-}
 .section__hero .title {
   margin: 0.5rem 0;
   font-family: "Zilla Slab", serif;
@@ -34,7 +22,7 @@
 .section__form .button {
   color: #0e0d07;
   font-weight: 500;
-  background-color: #6c733d;
+  background-color: #ffffff;
 }
 
 .section__info {
@@ -50,7 +38,7 @@
   color: #0e0d07;
   font-size: 22px;
 }
-.section__info .info-description {
+.section__info .info-description, .section__info .info-redes .redes-link {
   color: #0e0d07;
   font-size: 15px;
 }
@@ -58,20 +46,12 @@
   list-style: none;
 }
 .section__info .info-redes .redes-link {
-  color: #0e0d07;
-  font-size: 15px;
-  text-align: center;
+  font-size: 13px;
 }
 
 .section__map {
   background-color: #6c733d;
   padding: 2rem 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .body__exploraellodge {
@@ -135,32 +115,32 @@
     height: 500px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .body__nosotros {
   background-color: #6c733d;
 }
 
-.hero p {
-  font-size: 22px;
+.section__hero {
+  text-align: center;
+  background-color: #6c733d;
   color: #0e0d07;
+  padding: 3rem;
+}
+.section__hero .description {
+  font-size: 22px;
+  font-weight: lighter;
 }
 
-.section__1 {
+.section__1, .section__2 {
   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(../imagenes/NOSOTROS-CASAVIEJA.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  text-align: right;
-  margin: 0.5rem 0;
   padding: 8rem 0;
+  text-align: right;
+  margin: 2rem 0;
 }
-.section__1 .section-title {
+.section__1 .section-title, .section__2 .section-title {
   font-size: 38px;
   font-weight: bold;
 }
@@ -170,20 +150,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: #ffffff;
   text-align: left;
-  margin: 2rem 0;
-  padding: 8rem 0;
 }
 .section__2 .section-title {
   font-size: 38px;
   font-weight: bold;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .section__cards {
@@ -209,62 +180,6 @@
   color: #ffffff;
   font-weight: 500;
   background-color: #6c733d;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.header {
-  background-color: #ffffff;
-  display: block;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-.header .navbar {
-  background-color: #ffffff;
-}
-
-.navbar-brand {
-  display: block;
-  margin: auto;
-}
-
-.navbar-collapse {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav__item {
-  list-style: none;
-  display: inline-block;
-  margin: 0.5rem 10px;
-  position: relative;
-}
-.nav__item::before {
-  content: "";
-  height: 3px;
-  width: 0%;
-  background: #f2bb16;
-  position: absolute;
-  left: 0;
-  bottom: -12px;
-  transition: 0.4s ease-out;
-}
-.nav__item:hover::before {
-  width: 100%;
-}
-.nav__item .nav__link {
-  text-align: center;
-  text-decoration: none;
-  color: #0e0d07;
-  font-size: 14px;
-  font-weight: bold;
 }
 
 .hero {
@@ -352,39 +267,6 @@
   max-width: 800px;
 }
 
-.footer {
-  background-color: #6c733d;
-  text-align: center;
-  list-style-type: none;
-  padding-top: 2rem;
-  color: #0e0d07;
-}
-.footer .footer__newsletter {
-  font-family: "Zilla Slab", serif;
-  font-size: 18px;
-  font-weight: bold;
-}
-.footer .footer__social {
-  font-family: "Zilla Slab", serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-.footer .social-item {
-  list-style-type: none;
-}
-.footer .social-item .social-link {
-  color: #0e0d07;
-  font-size: 12px;
-}
-.footer .footer__about {
-  font-family: "Zilla Slab", serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-.footer .about-item {
-  list-style-type: none;
-}
-
 @media (min-width: 768px) {
   .section .section-content {
     text-align: right;
@@ -428,6 +310,91 @@
     width: 800px;
     height: 400px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #ffffff;
+  display: block;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.header .navbar {
+  background-color: #ffffff;
+}
+
+.navbar-brand {
+  display: block;
+  margin: auto;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item {
+  list-style: none;
+  display: inline-block;
+  margin: 0.5rem 10px;
+  position: relative;
+}
+.nav__item::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #f2bb16;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.4s ease-out;
+}
+.nav__item:hover::before {
+  width: 100%;
+}
+.nav__item .nav__link {
+  text-align: center;
+  text-decoration: none;
+  color: #0e0d07;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #6c733d;
+  text-align: center;
+  list-style-type: none;
+  padding-top: 2rem;
+  color: #0e0d07;
+}
+.footer .footer__newsletter, .footer .footer__about, .footer .footer__social {
+  font-family: "Zilla Slab", serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer .footer__social {
+  font-size: 17px;
+}
+.footer .social-item {
+  list-style-type: none;
+}
+.footer .social-item .social-link {
+  color: #0e0d07;
+  font-size: 12px;
+}
+.footer .footer__about {
+  font-size: 16px;
+}
+.footer .about-item {
+  list-style-type: none;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .section__hero {
-  text-align: center;
-  background-color: $paleta-color-3;
-  color: $color-texto-1;
-  padding: 3rem;
   .title {
     margin: 0.5rem 0;
     font-family: $tipografia-1;
@@ -27,7 +18,7 @@
   .button {
     color: $color-texto-1;
     font-weight: 500;
-    background-color: $paleta-color-3;
+    background-color: $paleta-color-4;
   }
 }
 .section__info {
@@ -49,9 +40,8 @@
   .info-redes {
     list-style: none;
     .redes-link {
-      color: $color-texto-1;
-      font-size: 15px;
-      text-align: center;
+      @extend .info-description;
+      font-size: 13px;
     }
   }
 }
