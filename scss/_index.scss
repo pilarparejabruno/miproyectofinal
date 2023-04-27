@@ -49,8 +49,7 @@
   padding-top: 2rem;
 
   .section-content {
-    text-align: center;
-    color: $color-texto-1;
+    @include center-color;
   }
   .section-title {
     font-size: 30px;
@@ -59,23 +58,20 @@
   .section-img {
     margin: auto;
     display: block;
-    width: 200px;
-    height: 150px;
+    @include sizes(200px, 150px);
     padding-bottom: 1.5rem;
   }
 }
 .section__galery {
-  text-align: center;
-  color: $color-texto-1;
+  @include center-color;
 
   .galery-title {
     font-size: 32px;
     font-weight: bold;
   }
   .galery-content {
-    text-align: center;
     margin-top: 3rem;
-    color: $color-texto-1;
+    @include center-color;
   }
   .carousel {
     margin: 2rem 1rem;
@@ -88,8 +84,7 @@
       text-align: right;
     }
     .section-img {
-      width: 400px;
-      height: 300px;
+      @include sizes(400px, 300px);
       padding-bottom: 1.5rem;
     }
   }
@@ -118,8 +113,7 @@
   }
   .section {
     .section-img {
-      width: 500px;
-      height: 300px;
+      @include sizes(600px, 400px);
       padding-bottom: 1.5rem;
     }
   }

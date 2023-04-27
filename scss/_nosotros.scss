@@ -2,9 +2,8 @@
   background-color: $paleta-color-3;
 }
 .section__hero {
-  text-align: center;
   background-color: $paleta-color-3;
-  color: $color-texto-1;
+  @include center-color;
   padding: 3rem;
   .description {
     font-size: 22px;

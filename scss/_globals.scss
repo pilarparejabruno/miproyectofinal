@@ -45,19 +45,18 @@
     width: 100%;
   }
   .nav__link {
-    text-align: center;
     text-decoration: none;
-    color: $color-texto-1;
+    @include center-color;
     font-size: 14px;
     font-weight: bold;
   }
 }
+
 .footer {
   background-color: $paleta-color-3;
-  text-align: center;
+  @include center-color;
   list-style-type: none;
   padding-top: 2rem;
-  color: $color-texto-1;
 
   .footer__newsletter {
     font-family: $tipografia-1;
