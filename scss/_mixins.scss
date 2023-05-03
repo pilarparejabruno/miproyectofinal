@@ -1,6 +1,7 @@
 @mixin CenterColor {
   text-align: center;
   color: $color-texto-1;
+  font-weight: bolder;
 }
 @mixin Imagensize($width, $height) {
   width: $width;

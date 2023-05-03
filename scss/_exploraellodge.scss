@@ -22,6 +22,17 @@
     margin-top: -1rem;
   }
 }
+@media (min-width: 768px) {
+  #carouselhabitacion {
+    padding-top: 4rem;
+  }
+  #carouselespacios {
+    padding-top: 4rem;
+  }
+  #carouselgastronomia {
+    padding-top: 4rem;
+  }
+}
 @media (min-width: 1020px) {
   .articles {
     @include CenterColor;
@@ -37,7 +48,7 @@
       color: $paleta-color-3;
     }
     .description {
-      font-size: 20px;
+      font-size: 18px;
       margin-top: -1rem;
     }
   }

@@ -18,17 +18,17 @@
   .hero-title {
     font-family: $tipografia-1;
     color: $color-texto-1;
-    font-size: 42px;
+    font-size: 30px;
     margin-top: 2rem;
     padding-bottom: 0.5rem;
   }
   .hero-subtitle {
-    font-size: 25px;
     color: $color-texto-1;
+    font-size: 20px;
   }
   .hero-description {
     @include CenterColor;
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 .video {
@@ -46,13 +46,13 @@
 .section {
   position: relative;
   padding-top: 2rem;
-
-  .section-content {
-    @include CenterColor;
-  }
   .section-title {
-    font-size: 30px;
-    font-weight: bold;
+    @include CenterColor;
+    font-size: 20px;
+  }
+  .section-description {
+    @include CenterColor;
+    font-size: 12px;
   }
   .section-img {
     margin: auto;
@@ -62,15 +62,13 @@
   }
 }
 .section__galery {
-  @include CenterColor;
-
   .galery-title {
-    font-size: 32px;
-    font-weight: bold;
-  }
-  .galery-content {
-    margin-top: 3rem;
     @include CenterColor;
+    font-size: 20px;
+  }
+  .galery-description {
+    @include CenterColor;
+    font-size: 12px;
   }
   .carousel {
     margin: 2rem 1rem;
@@ -78,9 +76,26 @@
   }
 }
 @media (min-width: 768px) {
+  .hero {
+    .hero-title {
+      font-size: 42px;
+    }
+    .hero-subtitle {
+      font-size: 25px;
+    }
+    .hero-description {
+      font-size: 18px;
+    }
+  }
   .section {
     .section-content {
       text-align: right;
+    }
+    .section-title {
+      font-size: 20px;
+    }
+    .section-description {
+      font-size: 15px;
     }
     .section-img {
       @include Imagensize(400px, 300px);
@@ -91,6 +106,12 @@
     .galery-content {
       text-align: left;
       padding-bottom: 1.5rem;
+    }
+    .galery-title {
+      font-size: 20px;
+    }
+    .galery-description {
+      font-size: 15px;
     }
     .carousel {
       margin: 2rem 1rem;
@@ -104,6 +125,7 @@
     }
   }
 }
+
 @media (min-width: 1020px) {
   .nav__item {
     .nav__link {
@@ -111,12 +133,30 @@
     }
   }
   .section {
+    .section-content {
+      padding-top: 5rem;
+    }
+    .section-title {
+      font-size: 30px;
+    }
+    .section-description {
+      font-size: 20px;
+    }
     .section-img {
       @include Imagensize(600px, 400px);
       padding-bottom: 1.5rem;
     }
   }
   .section__galery {
+    .galery-content {
+      padding-top: 5rem;
+    }
+    .galery-title {
+      font-size: 30px;
+    }
+    .galery-description {
+      font-size: 20px;
+    }
     .carousel {
       margin: 2rem 1rem;
       max-width: 800px;

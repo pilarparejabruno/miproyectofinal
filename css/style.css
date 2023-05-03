@@ -80,10 +80,22 @@
   margin-top: -1rem;
 }
 
+@media (min-width: 768px) {
+  #carouselhabitacion {
+    padding-top: 4rem;
+  }
+  #carouselespacios {
+    padding-top: 4rem;
+  }
+  #carouselgastronomia {
+    padding-top: 4rem;
+  }
+}
 @media (min-width: 1020px) {
   .articles {
     text-align: center;
     color: #0e0d07;
+    font-weight: bolder;
     padding: 4rem;
   }
   .articles .title {
@@ -96,7 +108,7 @@
     color: #6c733d;
   }
   .articles .description {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: -1rem;
   }
 }
@@ -108,6 +120,7 @@
   background-color: #6c733d;
   text-align: center;
   color: #0e0d07;
+  font-weight: bolder;
   padding: 3rem;
 }
 .section__hero .description {
@@ -122,35 +135,39 @@
   background-position: center;
   color: #ffffff;
   padding: 8rem 0;
-  text-align: right;
+  text-align: center;
+  font-weight: 900;
   margin: 2rem 0;
 }
 .section__1 .section-title, .section__2 .section-title {
   font-size: 38px;
   font-weight: bold;
+  text-align: right;
 }
 
 .section__2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(../imagenes/NOSOTROS-PUEBLO.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(../imagenes/NOSOTROS-ESQUINA.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: left;
 }
 .section__2 .section-title {
   font-size: 38px;
   font-weight: bold;
+  text-align: left;
+}
+
+.body__servicios {
+  background-color: #6c733d;
 }
 
 .section__cards {
-  padding: 4rem 0;
+  background-color: #ffffff;
+  padding: 2rem;
   text-align: center;
 }
 .section__cards .card {
-  display: inline-block;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3rem;
+  margin: auto;
 }
 .section__cards .card .card-body {
   color: #0e0d07;
@@ -159,7 +176,9 @@
   font-size: 30px;
 }
 .section__cards .card .card-body .card-text {
-  font-size: 20px;
+  text-align: center;
+  color: #0e0d07;
+  font-weight: bolder;
 }
 .section__cards .card .card-body .button {
   color: #ffffff;
@@ -213,18 +232,19 @@
 .hero .hero-title {
   font-family: "Zilla Slab", serif;
   color: #0e0d07;
-  font-size: 42px;
+  font-size: 30px;
   margin-top: 2rem;
   padding-bottom: 0.5rem;
 }
 .hero .hero-subtitle {
-  font-size: 25px;
   color: #0e0d07;
+  font-size: 20px;
 }
 .hero .hero-description {
   text-align: center;
   color: #0e0d07;
-  font-size: 15px;
+  font-weight: bolder;
+  font-size: 12px;
 }
 
 .video {
@@ -243,13 +263,17 @@
   position: relative;
   padding-top: 2rem;
 }
-.section .section-content {
+.section .section-title {
   text-align: center;
   color: #0e0d07;
+  font-weight: bolder;
+  font-size: 20px;
 }
-.section .section-title {
-  font-size: 30px;
-  font-weight: bold;
+.section .section-description {
+  text-align: center;
+  color: #0e0d07;
+  font-weight: bolder;
+  font-size: 12px;
 }
 .section .section-img {
   margin: auto;
@@ -259,18 +283,17 @@
   padding-bottom: 1.5rem;
 }
 
-.section__galery {
-  text-align: center;
-  color: #0e0d07;
-}
 .section__galery .galery-title {
-  font-size: 32px;
-  font-weight: bold;
-}
-.section__galery .galery-content {
-  margin-top: 3rem;
   text-align: center;
   color: #0e0d07;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.section__galery .galery-description {
+  text-align: center;
+  color: #0e0d07;
+  font-weight: bolder;
+  font-size: 12px;
 }
 .section__galery .carousel {
   margin: 2rem 1rem;
@@ -278,8 +301,23 @@
 }
 
 @media (min-width: 768px) {
+  .hero .hero-title {
+    font-size: 42px;
+  }
+  .hero .hero-subtitle {
+    font-size: 25px;
+  }
+  .hero .hero-description {
+    font-size: 18px;
+  }
   .section .section-content {
     text-align: right;
+  }
+  .section .section-title {
+    font-size: 20px;
+  }
+  .section .section-description {
+    font-size: 15px;
   }
   .section .section-img {
     width: 400px;
@@ -289,6 +327,12 @@
   .section__galery .galery-content {
     text-align: left;
     padding-bottom: 1.5rem;
+  }
+  .section__galery .galery-title {
+    font-size: 20px;
+  }
+  .section__galery .galery-description {
+    font-size: 15px;
   }
   .section__galery .carousel {
     margin: 2rem 1rem;
@@ -305,10 +349,28 @@
   .nav__item .nav__link {
     font-size: 17px;
   }
+  .section .section-content {
+    padding-top: 5rem;
+  }
+  .section .section-title {
+    font-size: 30px;
+  }
+  .section .section-description {
+    font-size: 20px;
+  }
   .section .section-img {
     width: 600px;
     height: 400px;
     padding-bottom: 1.5rem;
+  }
+  .section__galery .galery-content {
+    padding-top: 5rem;
+  }
+  .section__galery .galery-title {
+    font-size: 30px;
+  }
+  .section__galery .galery-description {
+    font-size: 20px;
   }
   .section__galery .carousel {
     margin: 2rem 1rem;
@@ -373,6 +435,7 @@
   text-decoration: none;
   text-align: center;
   color: #0e0d07;
+  font-weight: bolder;
   font-size: 14px;
   font-weight: bold;
 }
@@ -381,6 +444,7 @@
   background-color: #6c733d;
   text-align: center;
   color: #0e0d07;
+  font-weight: bolder;
   list-style-type: none;
   padding-top: 2rem;
 }

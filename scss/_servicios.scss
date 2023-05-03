@@ -1,18 +1,19 @@
+.body__servicios {
+  background-color: $paleta-color-3;
+}
 .section__cards {
-  padding: 4rem 0;
+  background-color: $paleta-color-4;
+  padding: 2rem;
   text-align: center;
   .card {
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3rem;
+    margin: auto;
     .card-body {
       color: $color-texto-1;
       .card-title {
         font-size: 30px;
       }
       .card-text {
-        font-size: 20px;
+        @include CenterColor;
       }
       .button {
         color: $color-texto-2;

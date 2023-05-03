@@ -18,23 +18,25 @@
   background-position: center;
   color: $color-texto-2;
   padding: 8rem 0;
-  text-align: right;
+  text-align: center;
+  font-weight: 900;
   margin: 2rem 0;
   .section-title {
     font-size: 38px;
     font-weight: bold;
+    text-align: right;
   }
 }
 .section__2 {
   @extend .section__1;
   background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
-    url(../imagenes/NOSOTROS-PUEBLO.jpg);
+    url(../imagenes/NOSOTROS-ESQUINA.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: left;
   .section-title {
     font-size: 38px;
     font-weight: bold;
+    text-align: left;
   }
 }
