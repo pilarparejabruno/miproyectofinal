@@ -1,9 +1,8 @@
-@mixin sizes($width, $height) {
-  width: $width;
-  height: $height;
-}
-
-@mixin center-color {
+@mixin CenterColor {
   text-align: center;
   color: $color-texto-1;
+}
+@mixin Imagensize($width, $height) {
+  width: $width;
+  height: $height;
 }

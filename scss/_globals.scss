@@ -46,7 +46,7 @@
   }
   .nav__link {
     text-decoration: none;
-    @include center-color;
+    @include CenterColor;
     font-size: 14px;
     font-weight: bold;
   }
@@ -54,7 +54,7 @@
 
 .footer {
   background-color: $paleta-color-3;
-  @include center-color;
+  @include CenterColor;
   list-style-type: none;
   padding-top: 2rem;
 

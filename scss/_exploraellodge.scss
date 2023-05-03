@@ -24,8 +24,9 @@
 }
 @media (min-width: 1020px) {
   .articles {
+    @include CenterColor;
     padding: 4rem;
-    @include center-color;
+
     .title {
       font-size: 32px;
       margin-bottom: -2rem;

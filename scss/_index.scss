@@ -27,9 +27,8 @@
     color: $color-texto-1;
   }
   .hero-description {
-    text-align: center;
+    @include CenterColor;
     font-size: 15px;
-    color: $color-texto-1;
   }
 }
 .video {
@@ -49,7 +48,7 @@
   padding-top: 2rem;
 
   .section-content {
-    @include center-color;
+    @include CenterColor;
   }
   .section-title {
     font-size: 30px;
@@ -58,12 +57,12 @@
   .section-img {
     margin: auto;
     display: block;
-    @include sizes(200px, 150px);
+    @include Imagensize(200px, 150px);
     padding-bottom: 1.5rem;
   }
 }
 .section__galery {
-  @include center-color;
+  @include CenterColor;
 
   .galery-title {
     font-size: 32px;
@@ -71,7 +70,7 @@
   }
   .galery-content {
     margin-top: 3rem;
-    @include center-color;
+    @include CenterColor;
   }
   .carousel {
     margin: 2rem 1rem;
@@ -84,7 +83,7 @@
       text-align: right;
     }
     .section-img {
-      @include sizes(400px, 300px);
+      @include Imagensize(400px, 300px);
       padding-bottom: 1.5rem;
     }
   }
@@ -113,7 +112,7 @@
   }
   .section {
     .section-img {
-      @include sizes(600px, 400px);
+      @include Imagensize(600px, 400px);
       padding-bottom: 1.5rem;
     }
   }
