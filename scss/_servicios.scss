@@ -1,12 +1,16 @@
 .body__servicios {
-  background-color: $paleta-color-3;
+  background-color: $paleta-color-2;
 }
 .section__cards {
-  background-color: $paleta-color-4;
   padding: 2rem;
   text-align: center;
   .card {
     margin: auto;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
     .card-body {
       color: $color-texto-1;
       .card-title {
@@ -14,16 +18,24 @@
       }
       .card-text {
         @include CenterColor;
+        color: $color-texto-1;
       }
       .button {
         color: $color-texto-2;
         font-weight: 500;
-        background-color: $paleta-color-3;
+        background-color: $paleta-color-2;
       }
     }
   }
 }
-
+.section__cards {
+  .card {
+    transition: 0.8s;
+    &:hover {
+      scale: 1.2;
+    }
+  }
+}
 .button {
   position: relative;
   overflow: hidden;
@@ -35,7 +47,7 @@
     height: 100%;
     width: 100%;
     background-color: $paleta-color-4;
-    color: $paleta-color-3;
+    color: $paleta-color-2;
     display: flex;
     justify-content: center;
     align-items: center;

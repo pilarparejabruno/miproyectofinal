@@ -1,8 +1,7 @@
 .body__nosotros {
-  background-color: $paleta-color-3;
+  background-color: $paleta-color-2;
 }
 .section__hero {
-  background-color: $paleta-color-3;
   @include CenterColor;
   padding: 3rem;
   .description {

@@ -20,6 +20,8 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <!-- CSS DE AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- MY STYLE -->
     <link rel="stylesheet" href="../css/style.css" />
     <!-- Font Awesome -->
@@ -42,12 +44,12 @@
     <header class="header">
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img
               src="../imagenes/LOGO.png"
               alt="logo del lodge"
-              width="200"
-              height="180"
+              width="150px"
+              height="150px"
             />
           </a>
           <button
@@ -74,9 +76,6 @@
                 <a class="nav__link active" href="nosotros.html">NOSOTROS</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="contacto.html">CONTACTO</a>
-              </li>
-              <li class="nav__item">
                 <a class="nav__link" href="exploraellodge.html"
                   >EXPLORA EL LODGE</a
                 >
@@ -84,15 +83,8 @@
               <li class="nav__item">
                 <a class="nav__link" href="servicios.html">SERVICIOS</a>
               </li>
-            </ul>
-            <ul>
               <li class="nav__item">
-                <a href="" class="nav__link"
-                  ><i class="nav-link fa-brands fa-facebook"></i
-                ></a>
-                <a href="" class="nav__link"
-                  ><i class="nav-link fa-brands fa-instagram"></i
-                ></a>
+                <a class="nav__link" href="contacto.html">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -122,10 +114,10 @@
       <section class="section__1">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12" data-aos="fade-down">
               <h2 class="section-title">La abuela María</h2>
               <p class="lead">
-                El Lodge, que hoy en día es un destino de ensueño para los
+                > El Lodge, que hoy en día es un destino de ensueño para los
                 amantes de la caza y la pesca, tuvo sus humildes comienzos como
                 la casa de la querida abuela Maria. Con el tiempo, la casa fue
                 transformada en un alojamiento turístico que combina la
@@ -140,7 +132,7 @@
       <section class="section__2">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12" data-aos="fade-down">
               <h2 class="section-title">El Pueblo</h2>
               <p class="lead">
                 El lodge de caza y pesca está ubicado en el encantador pueblo de
@@ -168,12 +160,13 @@
             <div class="footer__newsletter">Suscribe to our newsletter</div>
             <div>
               <input
+                class="input-email"
                 type="text"
                 name="E-mail"
                 id="E-mail"
                 placeholder="Enter your e-mail"
               />
-              <input type="submit" value="Suscribe" />
+              <button class="btn-suscribe">Suscribe</button>
             </div>
           </div>
           <div class="col-sm-12 col-md-4">
@@ -182,22 +175,22 @@
               <ul class="container text-center">
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-brands fa-facebook">Facebook</i></a
+                    ><i class="fa-brands fa-facebook"></i>Facebook</a
                   >
                 </li>
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-brands fa-instagram">Instagram</i></a
+                    ><i class="fa-brands fa-instagram"></i>Instagram</a
                   >
                 </li>
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-solid fa-at">E-mail</i></a
+                    ><i class="fa-brands fa-at"></i>E-mail</a
                   >
                 </li>
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-brands fa-youtube">Youtube</i></a
+                    ><i class="fa-brands fa-youtube"></i>Youtube</a
                   >
                 </li>
               </ul>
@@ -223,5 +216,10 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!-- JS DE AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

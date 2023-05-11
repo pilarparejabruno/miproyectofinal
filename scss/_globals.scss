@@ -10,10 +10,6 @@
   position: sticky;
   top: 0;
   z-index: 2;
-
-  .navbar {
-    background-color: $paleta-color-4;
-  }
 }
 .navbar-brand {
   display: block;
@@ -47,39 +43,64 @@
   .nav__link {
     text-decoration: none;
     @include CenterColor;
+    color: $color-texto-1;
     font-size: 14px;
     font-weight: bold;
   }
 }
-
 .footer {
-  background-color: $paleta-color-3;
+  background-color: $paleta-color-4;
   @include CenterColor;
+  color: $color-texto-1;
   list-style-type: none;
   padding-top: 2rem;
 
   .footer__newsletter {
-    font-family: $tipografia-1;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+  }
+  .input-email {
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid $paleta-color-2;
+    color: $color-texto-1;
+    outline: none;
+  }
+  .input-email::placeholder {
+    color: $color-texto-1;
+  }
+  .btn-suscribe {
+    font-size: 20px;
+    padding: 0 10px;
+    color: $paleta-color-4;
+    border: 0;
+    border-radius: 10px;
+    background-color: $paleta-color-2;
   }
   .footer__social {
     @extend .footer__newsletter;
-    font-size: 17px;
   }
   .social-item {
     list-style-type: none;
     .social-link {
+      font-family: $tipografia-1;
       color: $color-texto-1;
-      font-size: 12px;
+      text-decoration: none;
+      font-size: 20px;
+      .fa-brands {
+        font-size: 20px;
+        margin: 5px;
+        color: $paleta-color-2;
+      }
     }
   }
   .footer__about {
     @extend .footer__newsletter;
-    font-size: 16px;
   }
   .about-item {
+    font-family: $tipografia-1;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 20px;
   }
 }

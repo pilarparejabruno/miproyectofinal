@@ -41,12 +41,17 @@
     />
     <title>La esquina de la abuela Lodge | Contacto</title>
   </head>
-  <body>
+  <body class="body__contacto">
     <header class="header">
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../imagenes/LOGO.png" alt="logo del lodge" width="150" />
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../imagenes/LOGO.png"
+              alt="logo del lodge"
+              width="150px"
+              height="150px"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -72,9 +77,6 @@
                 <a class="nav__link active" href="nosotros.html">NOSOTROS</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="contacto.html">CONTACTO</a>
-              </li>
-              <li class="nav__item">
                 <a class="nav__link" href="exploraellodge.html"
                   >EXPLORA EL LODGE</a
                 >
@@ -82,15 +84,8 @@
               <li class="nav__item">
                 <a class="nav__link" href="servicios.html">SERVICIOS</a>
               </li>
-            </ul>
-            <ul>
               <li class="nav__item">
-                <a href="" class="nav__link"
-                  ><i class="nav-link fa-brands fa-facebook"></i
-                ></a>
-                <a href="" class="nav__link"
-                  ><i class="nav-link fa-brands fa-instagram"></i
-                ></a>
+                <a class="nav__link" href="contacto.html">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -171,7 +166,7 @@
             <div class="row">
               <div class="col">
                 <div class="mb-4 d-grid gap-2 col-6 mx-auto">
-                  <button class="btn button">Enviar</button>
+                  <button class="btn button-enviar">ENVIAR</button>
                 </div>
               </div>
             </div>
@@ -222,6 +217,7 @@
               </div>
               <h3 class="info-title">CONTACTOS</h3>
               <p class="info-description">(+54 9 11) 5471-8580</p>
+              <p class="info-description">(+54 9 11) 5471-8580</p>
             </div>
             <div class="col-md-4">
               <div class="info-iconos">
@@ -243,12 +239,12 @@
                 <ul class="info-redes">
                   <li>
                     <a href="" class="redes-link"
-                      ><i class="fa-brands fa-facebook">Facebook</i></a
+                      ><i class="fa-brands fa-facebook"></i>FACEBOOK</a
                     >
                   </li>
                   <li>
                     <a href="" class="redes-link"
-                      ><i class="fa-brands fa-instagram">Instagram</i></a
+                      ><i class="fa-brands fa-instagram"></i>INSTAGRAM</a
                     >
                   </li>
                 </ul>
@@ -282,12 +278,13 @@
             <div class="footer__newsletter">Suscribe to our newsletter</div>
             <div>
               <input
+                class="input-email"
                 type="text"
                 name="E-mail"
                 id="E-mail"
                 placeholder="Enter your e-mail"
               />
-              <input type="submit" value="Suscribe" />
+              <button class="btn-suscribe">Suscribe</button>
             </div>
           </div>
           <div class="col-sm-12 col-md-4">
@@ -296,22 +293,22 @@
               <ul class="container text-center">
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-brands fa-facebook">Facebook</i></a
+                    ><i class="fa-brands fa-facebook"></i>Facebook</a
                   >
                 </li>
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-brands fa-instagram">Instagram</i></a
+                    ><i class="fa-brands fa-instagram"></i>Instagram</a
                   >
                 </li>
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-solid fa-at">E-mail</i></a
+                    ><i class="fa-brands fa-at"></i>E-mail</a
                   >
                 </li>
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-brands fa-youtube">Youtube</i></a
+                    ><i class="fa-brands fa-youtube"></i>Youtube</a
                   >
                 </li>
               </ul>

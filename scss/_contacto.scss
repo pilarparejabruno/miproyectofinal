@@ -1,33 +1,54 @@
+.body__contacto {
+  background-color: $paleta-color-2;
+}
 .section__hero {
   .title {
     margin: 0.5rem 0;
     font-family: $tipografia-1;
+    color: $color-texto-2;
   }
   .subtitle {
     font-family: $tipografia-1;
+    color: $color-texto-2;
   }
   .description {
     font-weight: 500;
+    color: $color-texto-2;
   }
 }
 .section__form {
   padding: 3rem 0;
   color: $color-texto-1;
   font-size: 20px;
-  background-color: $paleta-color-3;
-  .button {
-    color: $color-texto-1;
+  label {
+    color: $color-texto-2;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  input {
+    border-radius: 10px;
+    border: 2px solid $color-texto-1;
+  }
+  textarea {
+    border-radius: 10px;
+    border: 2px solid $color-texto-1;
+  }
+  .button-enviar {
+    color: $paleta-color-2;
+    font-size: 22px;
     font-weight: 500;
+    padding: 1rem;
     background-color: $paleta-color-4;
   }
 }
 .section__info {
+  background-color: $paleta-color-4;
   padding: 3rem 0;
   text-align: center;
   .info-iconos svg {
     width: 50px;
     height: 70px;
-    color: $paleta-color-3;
+    color: $paleta-color-2;
   }
   .info-title {
     color: $color-texto-1;
@@ -36,16 +57,21 @@
   .info-description {
     color: $color-texto-1;
     font-size: 15px;
+    margin: 5px 0;
   }
   .info-redes {
     list-style: none;
     .redes-link {
-      @extend .info-description;
-      font-size: 13px;
+      @extend .info-title;
+      text-decoration: none;
+      font-size: 20px;
+      .fa-brands {
+        font-size: 20px;
+        color: $paleta-color-2;
+      }
     }
   }
 }
 .section__map {
-  background-color: $paleta-color-3;
   padding: 2rem 0;
 }

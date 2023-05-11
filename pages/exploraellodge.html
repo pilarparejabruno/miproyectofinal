@@ -20,6 +20,8 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <!-- CSS DE AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- MY STYLE -->
     <link rel="stylesheet" href="../css/style.css" />
     <!-- Font Awesome -->
@@ -43,8 +45,13 @@
     <header class="header">
       <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../imagenes/LOGO.png" alt="logo del lodge" width="150" />
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../imagenes/LOGO.png"
+              alt="logo del lodge"
+              width="150px"
+              height="150px"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -70,9 +77,6 @@
                 <a class="nav__link active" href="nosotros.html">NOSOTROS</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="contacto.html">CONTACTO</a>
-              </li>
-              <li class="nav__item">
                 <a class="nav__link" href="exploraellodge.html"
                   >EXPLORA EL LODGE</a
                 >
@@ -80,15 +84,8 @@
               <li class="nav__item">
                 <a class="nav__link" href="servicios.html">SERVICIOS</a>
               </li>
-            </ul>
-            <ul>
               <li class="nav__item">
-                <a href="" class="nav__link"
-                  ><i class="nav-link fa-brands fa-facebook"></i
-                ></a>
-                <a href="" class="nav__link"
-                  ><i class="nav-link fa-brands fa-instagram"></i
-                ></a>
+                <a class="nav__link" href="contacto.html">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -109,7 +106,7 @@
       <section class="articles">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12" data-aos="fade-down">
               <h2 class="title">HABITACIONES</h2>
               <div class="divisor">
                 <svg
@@ -135,7 +132,7 @@
                 para que puedas venir con tu familia o amigos.
               </p>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12" data-aos="fade-down">
               <div id="carouselhabitacion" class="carousel slide">
                 <div class="carousel-indicators">
                   <button
@@ -239,7 +236,7 @@
       <section class="articles">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12" data-aos="fade-down">
               <h2 class="title">ESPACIOS</h2>
               <div class="divisor">
                 <svg
@@ -264,7 +261,7 @@
                 donde podras disfrutar de disitintos tragos de autor.
               </p>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12" data-aos="fade-down">
               <div id="carouselespacios" class="carousel slide">
                 <div class="carousel-indicators">
                   <button
@@ -353,7 +350,7 @@
       <section class="articles">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12" data-aos="fade-down">
               <h2 class="title">GASTRONOMÍA</h2>
               <div class="divisor">
                 <svg
@@ -378,7 +375,7 @@
                 selección de bebidas y cócteles.
               </p>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12" data-aos="fade-down">
               <div id="carouselgastronomia" class="carousel slide">
                 <div class="carousel-indicators">
                   <button
@@ -470,13 +467,13 @@
           <div class="col-md-4">
             <div class="footer__newsletter">Suscribe to our newsletter</div>
             <div>
-              <input
+              <input class="input-email"
                 type="text"
                 name="E-mail"
                 id="E-mail"
                 placeholder="Enter your e-mail"
               />
-              <input type="submit" value="Suscribe" />
+              <button class="btn-suscribe">Suscribe</button>
             </div>
           </div>
           <div class="col-md-4">
@@ -485,22 +482,22 @@
               <ul class="container text-center">
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-brands fa-facebook">Facebook</i></a
+                    ><i class="fa-brands fa-facebook"></i>Facebook</a
                   >
                 </li>
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-brands fa-instagram">Instagram</i></a
+                    ><i class="fa-brands fa-instagram"></i>Instagram</a
                   >
                 </li>
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-solid fa-at">E-mail</i></a
+                    ><i class="fa-brands fa-at"></i>E-mail</a
                   >
                 </li>
                 <li class="social-item">
                   <a href="" class="social-link"
-                    ><i class="fa-brands fa-youtube">Youtube</i></a
+                    ><i class="fa-brands fa-youtube"></i>Youtube</a
                   >
                 </li>
               </ul>
@@ -526,5 +523,10 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!-- JS DE AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

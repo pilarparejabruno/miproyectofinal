@@ -2,60 +2,87 @@
 /* paleta de color */
 /* colores de texto */
 /* tipografías */
+.body__contacto {
+  background-color: rgba(242, 187, 22, 0.8823529412);
+}
+
 .section__hero .title {
   margin: 0.5rem 0;
   font-family: "Zilla Slab", serif;
+  color: #ffffff;
 }
 .section__hero .subtitle {
   font-family: "Zilla Slab", serif;
+  color: #ffffff;
 }
 .section__hero .description {
   font-weight: 500;
+  color: #ffffff;
 }
 
 .section__form {
   padding: 3rem 0;
   color: #0e0d07;
   font-size: 20px;
-  background-color: #6c733d;
 }
-.section__form .button {
-  color: #0e0d07;
+.section__form label {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.section__form input {
+  border-radius: 10px;
+  border: 2px solid #0e0d07;
+}
+.section__form textarea {
+  border-radius: 10px;
+  border: 2px solid #0e0d07;
+}
+.section__form .button-enviar {
+  color: rgba(242, 187, 22, 0.8823529412);
+  font-size: 22px;
   font-weight: 500;
+  padding: 1rem;
   background-color: #ffffff;
 }
 
 .section__info {
+  background-color: #ffffff;
   padding: 3rem 0;
   text-align: center;
 }
 .section__info .info-iconos svg {
   width: 50px;
   height: 70px;
-  color: #6c733d;
+  color: rgba(242, 187, 22, 0.8823529412);
 }
-.section__info .info-title {
+.section__info .info-title, .section__info .info-redes .redes-link {
   color: #0e0d07;
   font-size: 22px;
 }
-.section__info .info-description, .section__info .info-redes .redes-link {
+.section__info .info-description {
   color: #0e0d07;
   font-size: 15px;
+  margin: 5px 0;
 }
 .section__info .info-redes {
   list-style: none;
 }
 .section__info .info-redes .redes-link {
-  font-size: 13px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.section__info .info-redes .redes-link .fa-brands {
+  font-size: 20px;
+  color: rgba(242, 187, 22, 0.8823529412);
 }
 
 .section__map {
-  background-color: #6c733d;
   padding: 2rem 0;
 }
 
 .body__exploraellodge {
-  background-color: #6c733d;
+  background-color: rgba(242, 187, 22, 0.8823529412);
 }
 
 .articles {
@@ -72,7 +99,7 @@
 .articles .divisor svg {
   width: 70px;
   height: 100px;
-  color: #6c733d;
+  color: rgba(242, 187, 22, 0.8823529412);
 }
 .articles .description {
   color: #0e0d07;
@@ -94,7 +121,7 @@
 @media (min-width: 1020px) {
   .articles {
     text-align: center;
-    color: #0e0d07;
+    color: rgba(242, 187, 22, 0.8823529412);
     font-weight: bolder;
     padding: 4rem;
   }
@@ -105,7 +132,6 @@
   .articles .divisor svg {
     width: 70px;
     height: 100px;
-    color: #6c733d;
   }
   .articles .description {
     font-size: 18px;
@@ -113,13 +139,12 @@
   }
 }
 .body__nosotros {
-  background-color: #6c733d;
+  background-color: rgba(242, 187, 22, 0.8823529412);
 }
 
 .section__hero {
-  background-color: #6c733d;
   text-align: center;
-  color: #0e0d07;
+  color: rgba(242, 187, 22, 0.8823529412);
   font-weight: bolder;
   padding: 3rem;
 }
@@ -158,16 +183,19 @@
 }
 
 .body__servicios {
-  background-color: #6c733d;
+  background-color: rgba(242, 187, 22, 0.8823529412);
 }
 
 .section__cards {
-  background-color: #ffffff;
   padding: 2rem;
   text-align: center;
 }
 .section__cards .card {
   margin: auto;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
 }
 .section__cards .card .card-body {
   color: #0e0d07;
@@ -177,13 +205,21 @@
 }
 .section__cards .card .card-body .card-text {
   text-align: center;
-  color: #0e0d07;
+  color: rgba(242, 187, 22, 0.8823529412);
   font-weight: bolder;
+  color: #0e0d07;
 }
 .section__cards .card .card-body .button {
   color: #ffffff;
   font-weight: 500;
-  background-color: #6c733d;
+  background-color: rgba(242, 187, 22, 0.8823529412);
+}
+
+.section__cards .card {
+  transition: 0.8s;
+}
+.section__cards .card:hover {
+  scale: 1.2;
 }
 
 .button {
@@ -198,7 +234,7 @@
   height: 100%;
   width: 100%;
   background-color: #ffffff;
-  color: #6c733d;
+  color: rgba(242, 187, 22, 0.8823529412);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,10 +248,8 @@
 }
 
 .hero {
-  margin: 2rem 0;
+  margin: 5rem 0;
   padding: 2rem 0;
-  color: #0e0d07;
-  background-color: #6c733d;
 }
 .hero .hero__content {
   position: static;
@@ -223,26 +257,21 @@
   margin: 0 auto;
   max-width: 720px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 5rem;
 }
 .hero .hero-title {
   font-family: "Zilla Slab", serif;
-  color: #0e0d07;
+  color: #ffffff;
   font-size: 30px;
-  margin-top: 2rem;
   padding-bottom: 0.5rem;
 }
 .hero .hero-subtitle {
-  color: #0e0d07;
   font-size: 20px;
+  color: #ffffff;
 }
 .hero .hero-description {
   text-align: center;
-  color: #0e0d07;
+  color: rgba(242, 187, 22, 0.8823529412);
   font-weight: bolder;
   font-size: 12px;
 }
@@ -259,23 +288,46 @@
   height: auto;
 }
 
-.section {
+.index__section1 {
+  background-color: #ffffff;
   position: relative;
-  padding-top: 2rem;
+  padding: 1rem 0;
+  margin-top: 5rem;
+  margin: 0 1rem;
 }
-.section .section-title {
+.index__section1 .section1-title {
   text-align: center;
-  color: #0e0d07;
+  color: rgba(242, 187, 22, 0.8823529412);
   font-weight: bolder;
   font-size: 20px;
 }
-.section .section-description {
+.index__section1 .section1-description {
   text-align: center;
-  color: #0e0d07;
+  color: rgba(242, 187, 22, 0.8823529412);
+  font-weight: bolder;
+  font-size: 10px;
+}
+
+.index__section2 {
+  background-color: rgba(242, 187, 22, 0.8823529412);
+  position: relative;
+  padding-top: 2rem;
+}
+.index__section2 .section-title {
+  text-align: center;
+  color: rgba(242, 187, 22, 0.8823529412);
+  font-weight: bolder;
+  font-size: 20px;
+  color: #ffffff;
+}
+.index__section2 .section-description {
+  text-align: center;
+  color: rgba(242, 187, 22, 0.8823529412);
   font-weight: bolder;
   font-size: 12px;
+  color: #ffffff;
 }
-.section .section-img {
+.index__section2 .section-img {
   margin: auto;
   display: block;
   width: 200px;
@@ -283,17 +335,22 @@
   padding-bottom: 1.5rem;
 }
 
+.section__galery {
+  background-color: rgba(242, 187, 22, 0.8823529412);
+}
 .section__galery .galery-title {
   text-align: center;
-  color: #0e0d07;
+  color: rgba(242, 187, 22, 0.8823529412);
   font-weight: bolder;
   font-size: 20px;
+  color: #ffffff;
 }
 .section__galery .galery-description {
   text-align: center;
-  color: #0e0d07;
+  color: rgba(242, 187, 22, 0.8823529412);
   font-weight: bolder;
   font-size: 12px;
+  color: #ffffff;
 }
 .section__galery .carousel {
   margin: 2rem 1rem;
@@ -301,6 +358,10 @@
 }
 
 @media (min-width: 768px) {
+  .hero {
+    margin: 5rem 0;
+    padding: 5rem 0;
+  }
   .hero .hero-title {
     font-size: 42px;
   }
@@ -310,16 +371,26 @@
   .hero .hero-description {
     font-size: 18px;
   }
-  .section .section-content {
-    text-align: right;
+  .index__section1 {
+    padding: 3rem;
+    margin: 0 3rem;
   }
-  .section .section-title {
+  .index__section1 .section1-title {
     font-size: 20px;
   }
-  .section .section-description {
+  .index__section1 .section1-description {
+    font-size: 25px;
+  }
+  .index__section2 .section-content {
+    text-align: right;
+  }
+  .index__section2 .section-title {
+    font-size: 20px;
+  }
+  .index__section2 .section-description {
     font-size: 15px;
   }
-  .section .section-img {
+  .index__section2 .section-img {
     width: 400px;
     height: 300px;
     padding-bottom: 1.5rem;
@@ -349,16 +420,39 @@
   .nav__item .nav__link {
     font-size: 17px;
   }
-  .section .section-content {
-    padding-top: 5rem;
+  .hero {
+    margin: 3rem 0;
+    padding: 3rem 0;
   }
-  .section .section-title {
+  .hero .hero-title {
+    font-size: 80px;
+  }
+  .hero .hero-subtitle {
+    font-size: 40px;
+  }
+  .hero .hero-description {
     font-size: 30px;
   }
-  .section .section-description {
+  .index__section1 {
+    padding: 4rem;
+    margin: 0 4rem;
+  }
+  .index__section1 .section1-title {
     font-size: 20px;
   }
-  .section .section-img {
+  .index__section1 .section1-description {
+    font-size: 25px;
+  }
+  .index__section2 .section-content {
+    padding-top: 5rem;
+  }
+  .index__section2 .section-title {
+    font-size: 30px;
+  }
+  .index__section2 .section-description {
+    font-size: 20px;
+  }
+  .index__section2 .section-img {
     width: 600px;
     height: 400px;
     padding-bottom: 1.5rem;
@@ -397,9 +491,6 @@
   top: 0;
   z-index: 2;
 }
-.header .navbar {
-  background-color: #ffffff;
-}
 
 .navbar-brand {
   display: block;
@@ -422,7 +513,7 @@
   content: "";
   height: 3px;
   width: 0%;
-  background: #f2bb16;
+  background: rgba(242, 187, 22, 0.8823529412);
   position: absolute;
   left: 0;
   bottom: -12px;
@@ -434,41 +525,63 @@
 .nav__item .nav__link {
   text-decoration: none;
   text-align: center;
-  color: #0e0d07;
+  color: rgba(242, 187, 22, 0.8823529412);
   font-weight: bolder;
+  color: #0e0d07;
   font-size: 14px;
   font-weight: bold;
 }
 
 .footer {
-  background-color: #6c733d;
+  background-color: #ffffff;
   text-align: center;
-  color: #0e0d07;
+  color: rgba(242, 187, 22, 0.8823529412);
   font-weight: bolder;
+  color: #0e0d07;
   list-style-type: none;
   padding-top: 2rem;
 }
 .footer .footer__newsletter, .footer .footer__about, .footer .footer__social {
-  font-family: "Zilla Slab", serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
-.footer .footer__social {
-  font-size: 17px;
+.footer .input-email {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 3px solid rgba(242, 187, 22, 0.8823529412);
+  color: #0e0d07;
+  outline: none;
+}
+.footer .input-email::placeholder {
+  color: #0e0d07;
+}
+.footer .btn-suscribe {
+  font-size: 20px;
+  padding: 0 10px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  background-color: rgba(242, 187, 22, 0.8823529412);
 }
 .footer .social-item {
   list-style-type: none;
 }
 .footer .social-item .social-link {
+  font-family: "Zilla Slab", serif;
   color: #0e0d07;
-  font-size: 12px;
+  text-decoration: none;
+  font-size: 20px;
 }
-.footer .footer__about {
-  font-size: 16px;
+.footer .social-item .social-link .fa-brands {
+  font-size: 20px;
+  margin: 5px;
+  color: rgba(242, 187, 22, 0.8823529412);
 }
 .footer .about-item {
+  font-family: "Zilla Slab", serif;
   list-style-type: none;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
